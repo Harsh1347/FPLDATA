@@ -18,7 +18,7 @@ print(teams)
 ### Get the EPL table. Returns a pandas DataFrame
 
 ```python
-from fpldata import get_table()
+from fpldata import get_table
 
 table = get_table()
 print(table)
