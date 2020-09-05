@@ -10,9 +10,9 @@ classifiers = [
  
 setup(
   name='fpldata',
-  version='0.0.1',
+  version='0.0.2',
   description='A simple library to get data out of the FPL API',
-  long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
+  long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='https://github.com/Harsh1347/FPLDATA',  
   author='Harsh Gupta',
   author_email='harshapj2@hotmail.com',
@@ -20,5 +20,5 @@ setup(
   classifiers=classifiers,
   keywords='FPL', 
   packages=find_packages(),
-  install_requires=['requests'] 
+  install_requires=['requests','pandas'] 
 )

@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: fpldata
+Version: 0.0.2
+Summary: A simple library to get data out of the FPL API
+Home-page: https://github.com/Harsh1347/FPLDATA
+Author: Harsh Gupta
+Author-email: harshapj2@hotmail.com
+License: MIT
+Description: 
+        
+        Change Log
+        ==========
+        
+        0.0.1 (01/09/2020)
+        -------------------
+        - First Release(Planning)
+Keywords: FPL
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Other Audience
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

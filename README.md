@@ -1,2 +1,8 @@
 # FPLDATA
-A simple library to get data out of the FPL API
+Get processed and cleaner data from the FPL API!
+
+# Installation
+Run the following code to install:
+```
+pip install fpldata
+```

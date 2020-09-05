@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+fpldata/__init__.py
+fpldata.egg-info/PKG-INFO
+fpldata.egg-info/SOURCES.txt
+fpldata.egg-info/dependency_links.txt
+fpldata.egg-info/requires.txt
+fpldata.egg-info/top_level.txt

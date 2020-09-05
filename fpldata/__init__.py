@@ -1,4 +1,5 @@
 import requests
+import pandas
 
 def get_team_name():
     URL = f"https://fantasy.premierleague.com/api/bootstrap-static/"
@@ -23,7 +24,8 @@ def get_table():
         table['Loss'].append(team['loss'])
         table['Points'].append(team['points'])
         table['Form'].append(team['form'])
-    return table
+    data = pandas.DataFrame(data=table)
+    return data
 
 def team_compare(team1,team2):
     URL = f"https://fantasy.premierleague.com/api/bootstrap-static/"
@@ -43,4 +45,5 @@ def team_compare(team1,team2):
                 stats['Away Attack'].append(t['strength_attack_away'])
                 stats['Home Defence'].append(t['strength_defence_home'])
                 stats['Away Defence'].append(t['strength_defence_away'])
-    return stats
+    data = pandas.DataFrame(data=stats)
+    return data
