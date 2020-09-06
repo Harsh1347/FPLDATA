@@ -41,3 +41,18 @@ class TeamData:
             return self.team_id[team1.upper()]
         else:
             return self.team_id
+    def get_table(self):
+        self.table = {'Position':[],'Team':[],'Games Played':[],'Win':[],'Draw':[],'Loss':[],'Points':[],'Form':[]}
+        for team in self.teams:
+            self.table['Position'].append(team['position'])
+            self.table['Team'].append(team['name'])
+            self.table['Games Played'].append(team['played'])
+            self.table['Win'].append(team['win'])
+            self.table['Draw'].append(team['draw'])
+            self.table['Loss'].append(team['loss'])
+            self.table['Points'].append(team['points'])
+            self.table['Form'].append(team['form'])
+        self.table = pandas.DataFrame(data=self.table,index= self.table['Position'])
+        
+        del(self.table['Position'])
+        return self.table

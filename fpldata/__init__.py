@@ -1,5 +1,5 @@
-from team_data import TeamData
-from players import PlayerData
+from .team_data import TeamData
+from .players import PlayerData
 
 # import requests
 # import pandas
