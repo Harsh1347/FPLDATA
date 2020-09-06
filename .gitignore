@@ -1,8 +1,0 @@
-*.pyc
-/*venv/
-*.egg-info/
-dist/
-*~
-/*.json
-
-.idea/
