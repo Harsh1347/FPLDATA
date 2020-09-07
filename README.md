@@ -13,7 +13,7 @@ pip install fpldata
 from fpldata import TeamData
 
 t1 = TeamData()
-print(t1.get_team_name())
+print(t1.list_team_name())
 ```
 ### Get the EPL table. Returns a pandas DataFrame
 
@@ -39,9 +39,9 @@ print(p1.player_list())
 
 ### Search player by name. Returns dictionary of player with ids as key and name as value
 ```python
-from fpldata import TeamData
-t1 = TeamData()
-data = t1.search_player('David')
+from fpldata import PlayerData
+p1 = PlayerData()
+data = p1.search_player('David')
 print(data)
 ```
 
