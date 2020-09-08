@@ -1,13 +1,17 @@
 import requests
 import pandas
 class TeamData:
-    URL = f"https://fantasy.premierleague.com/api/bootstrap-static/"
-    resp = requests.get(URL).json()
-    teams = resp['teams']
-    # events = resp['events']
-    # elements = resp['elements']
+    """
+    Module for getting data related to team.
+    """
+    
     
     def __init__(self):    
+        URL = f"https://fantasy.premierleague.com/api/bootstrap-static/"
+        resp = requests.get(URL).json()
+        self.teams = resp['teams']
+        self.events = resp['events']
+        self.elements = resp['elements']
         self.team_name = {}
         self.team_id = {}
         for team in self.teams:
@@ -15,6 +19,16 @@ class TeamData:
             self.team_id[team['short_name']] = team['id']
 
     def team_compare(self,team1,team2):
+        """
+        Returns a pandas dataframe comparing two teams based on their abilities.
+
+        :param team1: Short name of the first team.
+        :type team1: string
+        
+        :param team2: Short name of the second team.
+        :type team2: string
+        """
+
         self.stats = {'Team':[],'Strength':[],'Overall Home Strength':[],'Overall Away Strength':[],
                 'Home Attack':[],'Away Attack':[],'Home Defence':[],'Away Defence':[] }
         self.team_list = [team1,team2]
@@ -34,14 +48,28 @@ class TeamData:
         return self.data
     
     def list_team_name(self):
+        """
+        Returns a dictionary with team id as key and Short Team Name as value.
+        """
         return self.team_name
 
     def get_team_id(self,team1 = ""):
+        """
+        Returns the team id if team1 parameter is provided else a dictionary is returned with all the team id and corresponding short name.
+
+        :param team1: Short name of the first team.
+        :type team1: string
+
+        """
         if team1:
             return self.team_id[team1.upper()]
         else:
             return self.team_id
+
     def get_table(self):
+        """
+        Returns EPL table as a pandas dataframe 
+        """
         self.table = {'Position':[],'Team':[],'Games Played':[],'Win':[],'Draw':[],'Loss':[],'Points':[],'Form':[]}
         for team in self.teams:
             self.table['Position'].append(team['position'])

@@ -10,11 +10,14 @@ classifiers = [
  
 setup(
   name='fpldata',
-  version='0.0.2',
+  version='0.0.8.1',
   description='Getting data out of FPL API made easier',
   long_description=open('README.md').read() ,
   long_description_content_type = 'text/markdown',
-  url='https://github.com/Harsh1347/FPLDATA',  
+  url='https://github.com/Harsh1347/FPLDATA',
+  project_urls={
+        "GitHub": "https://github.com/harsh1347/FPLDATA"
+    },  
   author='Harsh Gupta',
   author_email='harshapj2@hotmail.com',
   license='MIT', 

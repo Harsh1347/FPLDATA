@@ -1,9 +1,16 @@
 CHANGELOG.txt
 LICENSE.txt
 MANIFEST.in
-README.txt
+README.md
 setup.py
+docs/conf.py
+docs/_build/html/_sources/index.rst.txt
+docs/_build/html/_sources/modules.rst.txt
+docs/_build/html/_sources/players.rst.txt
+docs/_build/html/_sources/team_data.rst.txt
 fpldata/__init__.py
+fpldata/players.py
+fpldata/team_data.py
 fpldata.egg-info/PKG-INFO
 fpldata.egg-info/SOURCES.txt
 fpldata.egg-info/dependency_links.txt

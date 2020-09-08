@@ -1,23 +1,65 @@
-Metadata-Version: 1.1
+Metadata-Version: 2.1
 Name: fpldata
-Version: 0.0.2
-Summary: A simple library to get data out of the FPL API
+Version: 0.0.8.1
+Summary: Getting data out of FPL API made easier
 Home-page: https://github.com/Harsh1347/FPLDATA
 Author: Harsh Gupta
 Author-email: harshapj2@hotmail.com
 License: MIT
-Description: 
+Project-URL: Source, https://github.com/harsh1347/FPLDATA
+Description: # FPLDATA :soccer:
+        ## Get processed and cleaner data from the FPL API!
         
-        Change Log
-        ==========
+        ## Installation
+        Run the following code to install:
+        ```python 
+        pip install fpldata
+        ```
         
-        0.0.1 (01/09/2020)
-        -------------------
-        - First Release(Planning)
+        ## Usage
+        ### Get the names of team in EPL. Returns a list
+        ```python
+        from fpldata import TeamData
+        
+        t1 = TeamData()
+        print(t1.get_team_name())
+        ```
+        ### Get the EPL table. Returns a pandas DataFrame
+        
+        ```python
+        from fpldata import TeamData
+        t1 = TeamData()
+        print(t1.get_table())
+        ```
+        ### Compares two teams based on their Strengths scores. Input should be the short name of the team. Returns a pandas DataFrame
+        ```python
+        from fpldata import TeamData
+        t1 = TeamData()
+        data = t1.team_compare('ARS','LIV')
+        print(data)
+        ```
+        
+        ### Get player list with their id. Returns dictionary of players with ids as key and name as value
+        ```python
+        from fpldata import PlayerData
+        p1 = PlayerData()
+        print(p1.player_list())
+        ```
+        
+        ### Search player by name. Returns dictionary of player with ids as key and name as value
+        ```python
+        from fpldata import TeamData
+        t1 = TeamData()
+        data = t1.search_player('David')
+        print(data)
+        ```
+        
+        
 Keywords: FPL
 Platform: UNKNOWN
 Classifier: Development Status :: 1 - Planning
 Classifier: Intended Audience :: Other Audience
 Classifier: Operating System :: Microsoft :: Windows :: Windows 10
 Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
