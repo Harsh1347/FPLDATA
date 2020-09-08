@@ -4,3 +4,12 @@ Change Log
 0.0.1 (01/09/2020)
 -------------------
 - First Release(Planning)
+
+0.0.2 (01/09/2020)
+-------------------
+- First Release(Testing)
+
+0.0.3 (08/09/2020)
+-------------------
+- First Release(Ready)
+
