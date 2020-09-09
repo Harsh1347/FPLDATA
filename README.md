@@ -1,4 +1,4 @@
-# FPLDATA :soccer:
+# FPLDATA 
 ## Get processed and cleaner data from the FPL API!
 
 ## Installation
