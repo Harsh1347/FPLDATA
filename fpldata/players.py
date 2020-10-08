@@ -1,6 +1,6 @@
 import requests
 import pandas
-from . import Team_Data
+
 
 class PlayerData:
     """
@@ -74,4 +74,4 @@ class PlayerData:
         """
         PLAYER_URL = f"https://fantasy.premierleague.com/api/element-summary/{player_id}/"
         resp2 = requests.get(PLAYER_URL).json()
-        return resp
+        return resp2

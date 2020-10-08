@@ -1,2 +1,2 @@
-from .Team_Data import TeamData
-from .Players import PlayerData
+from .team_data import TeamData
+from .players import PlayerData
