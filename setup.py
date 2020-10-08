@@ -10,7 +10,7 @@ classifiers = [
  
 setup(
   name='fpldata',
-  version='0.0.8.1',
+  version='0.0.3',
   description='Getting data out of FPL API made easier',
   long_description=open('README.md').read() ,
   long_description_content_type = 'text/markdown',

@@ -1,5 +1,7 @@
 import requests
 import pandas
+import Team_Data
+
 class PlayerData:
     """
     Module for getting players information
@@ -8,6 +10,7 @@ class PlayerData:
     def __init__(self):
         URL = f"https://fantasy.premierleague.com/api/bootstrap-static/"
         resp = requests.get(URL).json()
+        
         self.teams = resp['teams']
         self.events = resp['events']
         self.elements = resp['elements']
@@ -72,4 +75,5 @@ class PlayerData:
         PLAYER_URL = f"https://fantasy.premierleague.com/api/element-summary/{player_id}/"
         resp2 = requests.get(PLAYER_URL).json()
         return resp2
-    def player_fixture(self,player_id,num_gw)
+    
+    def player_fixture(self,player_id,num_gw):

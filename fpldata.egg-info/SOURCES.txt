@@ -8,6 +8,8 @@ docs/_build/html/_sources/index.rst.txt
 docs/_build/html/_sources/modules.rst.txt
 docs/_build/html/_sources/players.rst.txt
 docs/_build/html/_sources/team_data.rst.txt
+fpldata/Players.py
+fpldata/Team_Data.py
 fpldata/__init__.py
 fpldata/players.py
 fpldata/team_data.py

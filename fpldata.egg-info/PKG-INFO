@@ -1,13 +1,13 @@
 Metadata-Version: 2.1
 Name: fpldata
-Version: 0.0.8.1
+Version: 0.0.3
 Summary: Getting data out of FPL API made easier
 Home-page: https://github.com/Harsh1347/FPLDATA
 Author: Harsh Gupta
 Author-email: harshapj2@hotmail.com
 License: MIT
-Project-URL: Source, https://github.com/harsh1347/FPLDATA
-Description: # FPLDATA :soccer:
+Project-URL: GitHub, https://github.com/harsh1347/FPLDATA
+Description: # FPLDATA 
         ## Get processed and cleaner data from the FPL API!
         
         ## Installation
@@ -22,7 +22,7 @@ Description: # FPLDATA :soccer:
         from fpldata import TeamData
         
         t1 = TeamData()
-        print(t1.get_team_name())
+        print(t1.list_team_name())
         ```
         ### Get the EPL table. Returns a pandas DataFrame
         
@@ -48,9 +48,9 @@ Description: # FPLDATA :soccer:
         
         ### Search player by name. Returns dictionary of player with ids as key and name as value
         ```python
-        from fpldata import TeamData
-        t1 = TeamData()
-        data = t1.search_player('David')
+        from fpldata import PlayerData
+        p1 = PlayerData()
+        data = p1.search_player('David')
         print(data)
         ```
         
