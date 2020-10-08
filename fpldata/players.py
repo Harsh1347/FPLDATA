@@ -1,6 +1,6 @@
 import requests
 import pandas
-import Team_Data
+from . import Team_Data
 
 class PlayerData:
     """
@@ -74,6 +74,4 @@ class PlayerData:
         """
         PLAYER_URL = f"https://fantasy.premierleague.com/api/element-summary/{player_id}/"
         resp2 = requests.get(PLAYER_URL).json()
-        return resp2
-    
-    def player_fixture(self,player_id,num_gw):
+        return resp

@@ -1,12 +1,13 @@
 Metadata-Version: 2.1
 Name: fpldata
-Version: 0.0.3
+Version: 0.0.4
 Summary: Getting data out of FPL API made easier
 Home-page: https://github.com/Harsh1347/FPLDATA
 Author: Harsh Gupta
 Author-email: harshapj2@hotmail.com
 License: MIT
 Project-URL: GitHub, https://github.com/harsh1347/FPLDATA
+Project-URL: Documentation, https://harsh1347.github.io/fpldatadocs/
 Description: # FPLDATA 
         ## Get processed and cleaner data from the FPL API!
         
