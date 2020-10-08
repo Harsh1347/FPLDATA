@@ -45,3 +45,6 @@ data = p1.search_player('David')
 print(data)
 ```
 
+## Documentation 
+Find the documentation at https://harsh1347.github.io/fpldatadocs/players.html
+
