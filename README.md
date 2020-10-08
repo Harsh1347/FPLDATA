@@ -46,5 +46,5 @@ print(data)
 ```
 
 ## Documentation 
-Find the documentation at https://harsh1347.github.io/fpldatadocs/players.html
+Find the documentation at https://harsh1347.github.io/fpldatadocs/
 
