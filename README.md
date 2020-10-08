@@ -1,6 +1,6 @@
 # FPLDATA 
 
-https://pypi.org/project/fpldata/0.0.3/
+https://pypi.org/project/fpldata/
 
 ## Get processed and cleaner data from the FPL API!
 
