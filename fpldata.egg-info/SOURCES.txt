@@ -4,10 +4,6 @@ MANIFEST.in
 README.md
 setup.py
 docs/conf.py
-docs/_build/html/_sources/index.rst.txt
-docs/_build/html/_sources/modules.rst.txt
-docs/_build/html/_sources/players.rst.txt
-docs/_build/html/_sources/team_data.rst.txt
 fpldata/Players.py
 fpldata/Team_Data.py
 fpldata/__init__.py
@@ -18,3 +14,5 @@ fpldata.egg-info/SOURCES.txt
 fpldata.egg-info/dependency_links.txt
 fpldata.egg-info/requires.txt
 fpldata.egg-info/top_level.txt
+fpldata/tests/__init__.py
+fpldata/tests/test_players.py

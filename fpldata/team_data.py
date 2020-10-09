@@ -61,10 +61,11 @@ class TeamData:
         :type team1: string
 
         """
-        if team1:
-            return self.team_id[team1.upper()]
-        else:
-            return self.team_id
+        try:
+            return self.team_id[team1.upper()] if team1 else self.team_id
+        except KeyError as err:
+            print('Error!', err)
+            raise
 
     def get_table(self):
         """
