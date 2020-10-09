@@ -9,6 +9,9 @@ License: MIT
 Project-URL: GitHub, https://github.com/harsh1347/FPLDATA
 Project-URL: Documentation, https://harsh1347.github.io/fpldatadocs/
 Description: # FPLDATA 
+        
+        https://pypi.org/project/fpldata/
+        
         ## Get processed and cleaner data from the FPL API!
         
         ## Installation
@@ -54,6 +57,9 @@ Description: # FPLDATA
         data = p1.search_player('David')
         print(data)
         ```
+        
+        ## Documentation 
+        Find the documentation at https://harsh1347.github.io/fpldatadocs/
         
         
 Keywords: FPL
